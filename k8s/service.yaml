@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260525-004611-0vzi4bemlbay-service
+spec:
+  selector:
+    app: enterprise-system-20260525-004611-0vzi4bemlbay
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
